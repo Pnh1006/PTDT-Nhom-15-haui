@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HAUI-STORE</title>
+    <link rel="shortcut icon" type="image/png" href="admin-page/images/logos/favicon.png" />
+    <link rel="stylesheet" href="admin-page/css/styles.css" />
+</head>
+
+<body>
+<!--  Body Wrapper -->
+<div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+     data-sidebar-position="fixed" data-header-position="fixed">
+    <!-- Sidebar Start -->
+    <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div>
+            <div class="brand-logo d-flex align-items-center justify-content-between">
+                <a href="#" class="text-nowrap logo-img">
+                    <img src="admin-page/images/logos/dark-logo.svg" width="180" alt="" />
+                </a>
+                <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+                    <i class="ti ti-x fs-8"></i>
+                </div>
+            </div>
+            <!-- Sidebar navigation-->
+            <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+                <ul id="sidebarnav">
+                    <li class="nav-small-cap">
+                        <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                        <span class="hide-menu">Home</span>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" th:href="@{'/manage?page=0'}" aria-expanded="false">
+                            <span>
+                               <i class="ti ti-sitemap"></i>
+                            </span>
+                            <span class="hide-menu">Product Manage</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" th:href="@{/home}" aria-expanded="false">
+                            <span>
+                               <i class="ti ti-layout-dashboard"></i>
+                            </span>
+                            <span class="hide-menu">View Page</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+    </aside>
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+        <!--  Header Start -->
+        <header class="app-header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <ul class="navbar-nav">
+                    <li class="nav-item d-block d-xl-none">
+                        <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="#">
+                            <i class="ti ti-menu-2"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                    </li>
+                </ul>
+                <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+                    <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+                        <h5>Welcom Admin</h5>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link nav-icon-hover" href="#" id="drop2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="admin-page/images/profile/admin-icon.png" alt="" width="35" height="35" class="rounded-circle">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                                <div class="message-body">
+                                    <a th:href="@{/perform_logout}" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--  Header End -->
+        <div class="container-fluid">
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title fw-semibold mb-4">Thêm thông tin cho sản phẩm mới</h5>
+                        <div class="card">
+                            <div class="card-body">
+                                <form method="POST" th:action="@{/create-new}">
+                                    <div class="mb-3">
+                                        <label for="product-name" class="form-label">Tên Sản Phẩm</label>
+                                        <input type="text" class="form-control" id="product-name" name="name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="product-list-price" class="form-label">Giá niêm yết VND</label>
+                                        <input type="number" class="form-control" id="product-list-price" name="listPrice">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="product-sale-price" class="form-label">Giá bán thực VND</label>
+                                        <input type="number" class="form-control" id="product-sale-price" name="salePrice">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="product-image" class="form-label">Logo sản phẩm</label>
+                                        <input type="text" class="form-control" id="product-image" name="image">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="product-detail" class="form-label">Chi tiết sản phẩm</label>
+                                        <textarea class="form-control" id="product-detail" rows="3" name="detail"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- table end -->
+    </div>
+</div>
+<script src="admin-page/libs/jquery/dist/jquery.min.js"></script>
+<script src="admin-page/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="admin-page/js/sidebarmenu.js"></script>
+<script src="admin-page/js/app.min.js"></script>
+<script src="admin-page/js/dashboard.js"></script>
+</body>
+</html>
