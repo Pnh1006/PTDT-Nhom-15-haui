@@ -1,10 +1,10 @@
 <!doctype html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Modernize Free</title>
+    <title>HAUI-STORE</title>
     <link rel="shortcut icon" type="image/png" href="admin-page/images/logos/favicon.png" />
     <link rel="stylesheet" href="admin-page/css/styles.css" />
 </head>
@@ -19,7 +19,7 @@
         <div>
             <div class="brand-logo d-flex align-items-center justify-content-between">
                 <a href="#" class="text-nowrap logo-img">
-                    <img src="admin-page/images/logos/dark-logo.svg" width="180" alt="" />
+                    <img src="admin-page/images/logos/dark-logo.png" width="180" alt="" />
                 </a>
                 <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
                     <i class="ti ti-x fs-8"></i>
@@ -33,11 +33,19 @@
                         <span class="hide-menu">Home</span>
                     </li>
                     <li class="sidebar-item">
-                        <a class="sidebar-link active" href="#" aria-expanded="false">
+                        <a class="sidebar-link active" th:href="@{'/manage?page=0'}" aria-expanded="false">
                             <span>
                                <i class="ti ti-sitemap"></i>
                             </span>
                             <span class="hide-menu">Product Manage</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a class="sidebar-link" th:href="@{/home}" aria-expanded="false">
+                            <span>
+                               <i class="ti ti-layout-dashboard"></i>
+                            </span>
+                            <span class="hide-menu">View Page</span>
                         </a>
                     </li>
                 </ul>
@@ -59,10 +67,6 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-icon-hover" href="#">
-                            <i class="ti ti-bell-ringing"></i>
-                            <div class="notification bg-primary rounded-circle"></div>
-                        </a>
                     </li>
                 </ul>
                 <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
@@ -86,189 +90,122 @@
         <div class="container-fluid">
 
             <div class="row">
-
+                <div class="col-lg-5"></div>
+                <div class="col-lg-4 card-body">
+                    <h5 class="card-title fw-semibold mb-4">Manage Product</h5>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
+            <div class="row">
                 <div class="card w-100">
                     <div class="card-body p-4">
-                        <h5 class="card-title fw-semibold mb-4">Recent Transactions</h5>
+                        <a class="card-title fw-semibold mb-4 btn btn-primary" th:href="@{/create-form}" style="color: azure;">New Product</a>
                         <div class="table-responsive">
                             <table class="table text-nowrap mb-0 align-middle">
                                 <thead class="text-dark fs-4">
-                                <tr>
-                                    <th class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">Id</h6>
-                                    </th>
-                                    <th class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">Assigned</h6>
-                                    </th>
-                                    <th class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">Name</h6>
-                                    </th>
-                                    <th class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">Priority</h6>
-                                    </th>
-                                    <th class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0">Budget</h6>
-                                    </th>
-                                </tr>
+                                    <tr>
+                                        <th class="border-bottom-0">
+                                            <h6 class="fw-semibold mb-0">Product Id</h6>
+                                        </th>
+                                        <th class="border-bottom-0">
+                                            <h6 class="fw-semibold mb-0">Product Name</h6>
+                                        </th>
+                                        <th class="border-bottom-0">
+                                            <h6 class="fw-semibold mb-0">Product image</h6>
+                                        </th>
+                                        <th class="border-bottom-0">
+                                            <h6 class="fw-semibold mb-0">List Price</h6>
+                                        </th>
+                                        <th class="border-bottom-0">
+                                            <h6 class="fw-semibold mb-0">Sale Price</h6>
+                                        </th>
+                                        <th class="border-bottom-0">
+                                            <h6 class="fw-semibold mb-0">Edit</h6>
+                                        </th>
+                                        <th class="border-bottom-0">
+                                            <h6 class="fw-semibold mb-0">Remove</h6>
+                                        </th>
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td class="border-bottom-0"><h6 class="fw-semibold mb-0">1</h6></td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-1">Sunil Joshi</h6>
-                                        <span class="fw-normal">Web Designer</span>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <p class="mb-0 fw-normal">Elite Admin</p>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <span class="badge bg-primary rounded-3 fw-semibold">Low</span>
-                                        </div>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0 fs-4">$3.9</h6>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="border-bottom-0"><h6 class="fw-semibold mb-0">2</h6></td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-1">Andrew McDownland</h6>
-                                        <span class="fw-normal">Project Manager</span>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <p class="mb-0 fw-normal">Real Homes WP Theme</p>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <span class="badge bg-secondary rounded-3 fw-semibold">Medium</span>
-                                        </div>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0 fs-4">$24.5k</h6>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="border-bottom-0"><h6 class="fw-semibold mb-0">3</h6></td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-1">Christopher Jamil</h6>
-                                        <span class="fw-normal">Project Manager</span>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <p class="mb-0 fw-normal">MedicalPro WP Theme</p>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <span class="badge bg-danger rounded-3 fw-semibold">High</span>
-                                        </div>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0 fs-4">$12.8k</h6>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="border-bottom-0"><h6 class="fw-semibold mb-0">4</h6></td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-1">Nirav Joshi</h6>
-                                        <span class="fw-normal">Frontend Engineer</span>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <p class="mb-0 fw-normal">Hosting Press HTML</p>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <span class="badge bg-success rounded-3 fw-semibold">Critical</span>
-                                        </div>
-                                    </td>
-                                    <td class="border-bottom-0">
-                                        <h6 class="fw-semibold mb-0 fs-4">$2.4k</h6>
-                                    </td>
-                                </tr>
+                                    <th:block th:each="element: ${data.productData}">
+                                        <tr>
+                                            <td class="border-bottom-0">[[${element.id}]]</td>
+                                            <td class="border-bottom-0">
+                                                <h6 class="fw-semibold mb-1" th:text="${element.name}"></h6>
+                                            </td>
+                                            <td class="border-bottom-0">
+                                                <p class="mb-0 fw-normal" th:text="${element.image}"></p>
+                                            </td>
+                                            <td class="border-bottom-0">
+                                                <p class="mb-0 fw-normal" th:text="${element.listPrice}"></p>
+                                            </td>
+                                            <td class="border-bottom-0">
+                                                <p class="mb-0 fw-normal" th:text="${element.salePrice}"></p>
+                                            </td>
+                                            <td class="border-bottom-0">
+                                                <a class="btn btn-success" th:href="@{'update-form?id=' + ${element.id}}">
+                                                    <i class="ti ti-edit"></i>
+                                                </a>
+                                            </td>
+                                            <td class="border-bottom-0">
+                                                <a class="btn btn-danger" th:href="@{'delete-product?id=' + ${element.id}}">
+                                                    <i class="ti ti-trash"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </th:block>
                                 </tbody>
                             </table>
                         </div>
                         <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
-                            <a class="paginate_button previous disabled" aria-controls="dataTable" data-dt-idx="0" tabindex="0" id="dataTable_previous">Previous</a>
-                            <span>
-                                  <a class="paginate_button" aria-controls="dataTable" data-dt-idx="1" tabindex="0">1</a>
-                                  <a class="paginate_button " aria-controls="dataTable" data-dt-idx="2" tabindex="0">2</a>
-                                  <a class="paginate_button " aria-controls="dataTable" data-dt-idx="3" tabindex="0">3</a>
-                                  <a class="paginate_button current" aria-controls="dataTable" data-dt-idx="4" tabindex="0">4</a>
-                                  <a class="paginate_button " aria-controls="dataTable" data-dt-idx="5" tabindex="0">5</a>
-                                  <a class="paginate_button " aria-controls="dataTable" data-dt-idx="6" tabindex="0">6</a>
-                            </span>
-                            <a class="paginate_button next" aria-controls="dataTable" data-dt-idx="7" tabindex="0" id="dataTable_next">Next</a>
+                            <th:block>
+                                <a class="paginate_button previous"
+                                   aria-controls="dataTable"
+                                   tabindex="0"
+                                   th:href="@{'/manage?page=' + ${data.currentPage - 1}}"
+                                   th:if="${data.currentPage != 0}">Previous</a>
+                                <a class="paginate_button previous disabled"
+                                   aria-controls="dataTable"
+                                   tabindex="0"
+                                   th:unless="${data.currentPage != 0}">Previous</a>
+                            </th:block>
+                            <th:block th:each="page: ${data.pageList}">
+                                <a class="paginate_button current"
+                                   aria-controls="dataTable"
+                                   tabindex="0" th:if="${page.currentPage == true}"
+                                    th:href="@{'/manage?page=' + ${page.pageIndex}}">
+                                    [[${page.pageIndex + 1}]]</a>
+                                <a class="paginate_button"
+                                   aria-controls="dataTable"
+                                   tabindex="0"
+                                   th:unless="${page.currentPage == true}"
+                                   th:href="@{'/manage?page=' + ${page.pageIndex}}">
+                                    [[${page.pageIndex + 1}]]</a>
+                            </th:block>
+                            <th:block>
+                                <a class="paginate_button next disabled"
+                                   aria-controls="dataTable"
+                                   th:if="${data.currentPage == data.totalPage - 1}"
+                                >Next</a>
+                                <a class="paginate_button next"
+                                   aria-controls="dataTable"
+                                   th:href="@{'/manage?page=' + ${data.currentPage + 1}}"
+                                   th:unless="${data.currentPage == data.totalPage - 1}"
+                                >Next</a>
+                            </th:block>
                         </div>
                     </div>
                 </div>
-                <!--</div> -->
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-xl-3">
-                    <div class="card overflow-hidden rounded-2">
-                        <div class="position-relative">
-                            <a href="#"><img src="admin-page/images/products/r77.jpg" class="card-img-top rounded-0" alt="..."></a>
-                            <a href="#" class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="ti ti-basket fs-4"></i></a>                      </div>
-                        <div class="card-body pt-3 p-4">
-                            <h6 class="fw-semibold fs-4">Boat Headphone</h6>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <h6 class="fw-semibold fs-4 mb-0">$50 <span class="ms-2 fw-normal text-muted fs-3"><del>$65</del></span></h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="card overflow-hidden rounded-2">
-                        <div class="position-relative">
-                            <a href="#"><img src="admin-page/images/products/r27.jpg" class="card-img-top rounded-0" alt="..."></a>
-                            <a href="#" class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="ti ti-basket fs-4"></i></a>                      </div>
-                        <div class="card-body pt-3 p-4">
-                            <h6 class="fw-semibold fs-4">Red Valvet Dress</h6>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <h6 class="fw-semibold fs-4 mb-0">$150 <span class="ms-2 fw-normal text-muted fs-3"><del>$200</del></span></h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="card overflow-hidden rounded-2">
-                        <div class="position-relative">
-                            <a href="#"><img src="admin-page/images/products/r73.jpg" class="card-img-top rounded-0" alt="..."></a>
-                            <a href="#" class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="ti ti-basket fs-4"></i></a>                      </div>
-                        <div class="card-body pt-3 p-4">
-                            <h6 class="fw-semibold fs-4">Red Valvet Dress</h6>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <h6 class="fw-semibold fs-4 mb-0">$150 <span class="ms-2 fw-normal text-muted fs-3"><del>$200</del></span></h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="card overflow-hidden rounded-2">
-                        <div class="position-relative">
-                            <a href="#"><img src="admin-page/images/products/kh35.jpg" class="card-img-top rounded-0" alt="..."></a>
-                            <a href="#" class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="ti ti-basket fs-4"></i></a>                      </div>
-                        <div class="card-body pt-3 p-4">
-                            <h6 class="fw-semibold fs-4">Cute Soft Teddybear</h6>
-                            <div class="d-flex align-items-center justify-content-between">
-                                <h6 class="fw-semibold fs-4 mb-0">$285 <span class="ms-2 fw-normal text-muted fs-3"><del>$345</del></span></h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="py-6 px-6 text-center">
-                <!-- can thay doi khu vuc nay -->
-                <p class="mb-0 fs-4">Design and Developed by ? Team</p>
             </div>
         </div>
+        <!-- table end -->
     </div>
 </div>
 <script src="admin-page/libs/jquery/dist/jquery.min.js"></script>
 <script src="admin-page/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="admin-page/js/sidebarmenu.js"></script>
 <script src="admin-page/js/app.min.js"></script>
-<script src="admin-page/libs/simplebar/dist/simplebar.js"></script>
 <script src="admin-page/js/dashboard.js"></script>
 </body>
 </html>
