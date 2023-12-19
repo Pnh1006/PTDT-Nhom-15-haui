@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <link rel="shortcut icon" href="shop-page/images/favicon.png" type="image/x-icon">
+    <title>
+        Giftos
+    </title>
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="shop-page/css/bootstrap.css" />
+    <!-- Custom styles for this template -->
+    <link href="shop-page/css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="shop-page/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+<div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" th:href="@{/home}">
+        <span>
+          Giftos
+        </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  ">
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/home}">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" th:href="@{/products}">shop <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/home#customer-review}">
+                            Customer Review
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/home#contact}">Contact</a>
+                    </li>
+                </ul>
+                <div class="user_option">
+                    <a th:href="@{/manage}">
+                      <span>
+                          Manage
+                      </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="slider_section">
+        <div class="slider_container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="detail-box">
+                                        <h1>
+                                            Lastest product
+                                        </h1>
+                                        <p>
+                                            Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
+                                        </p>
+                                        <a href="">
+                                            Contact Us
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 ">
+                                    <div class="card overflow-hidden rounded-2">
+                                        <div class="position-relative">
+                                            <a href="#"><img src="shop-page/images/r27.jpg" class="card-img-top rounded-0" alt="..."></a>
+                                        </div>
+                                        <div class="card-body pt-3 p-4" style="color: black; background-color: #F0F0F0">
+                                            <h6 class="fw-semibold fs-4">Boat Headphone</h6>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h6 class="fw-semibold fs-4 mb-0">$50 <span class="ms-2 fw-normal text-muted fs-3"><del>$65</del></span></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="detail-box">
+                                        <h1>
+                                            Big sale
+                                        </h1>
+                                        <p>
+                                            Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
+                                        </p>
+                                        <a href="">
+                                            Contact Us
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 ">
+                                    <div class="card overflow-hidden rounded-2">
+                                        <div class="position-relative">
+                                            <a href="#"><img src="shop-page/images/r77.jpg" class="card-img-top rounded-0" alt="..."></a>
+                                        </div>
+                                        <div class="card-body pt-3 p-4" style="color: black; background-color: #F0F0F0">
+                                            <h6 class="fw-semibold fs-4">Boat Headphone</h6>
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <h6 class="fw-semibold fs-4 mb-0">$50 <span class="ms-2 fw-normal text-muted fs-3"><del>$65</del></span></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="detail-box">
+                                    <h1>
+                                        Most purchased
+                                    </h1>
+                                    <p>
+                                        Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
+                                    </p>
+                                    <a href="">
+                                        Contact Us
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-5 ">
+                                <div class="card overflow-hidden rounded-2">
+                                    <div class="position-relative">
+                                        <a href="#"><img src="shop-page/images/r27.jpg" class="card-img-top rounded-0" alt="..."></a>
+                                    </div>
+                                    <div class="card-body pt-3 p-4" style="color: black; background-color: #F0F0F0">
+                                        <h6 class="fw-semibold fs-4">Boat Headphone</h6>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <h6 class="fw-semibold fs-4 mb-0">$50 <span class="ms-2 fw-normal text-muted fs-3"><del>$65</del></span></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel_btn-box">
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <img src="shop-page/images/line.png" alt="" />
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+</section>
+</div>
+<!-- end hero area -->
+
+<!-- shop section -->
+
+<section class="shop_section layout_padding">
+    <div class="container">
+        <div class="heading_container heading_center">
+            <h2>
+                Latest Products
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box">
+                    <a href="">
+                        <div class="img-box">
+                            <img src="shop-page/images/p1.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h6>
+                                Ring
+                            </h6>
+                            <h6>
+                                Price
+                                <span>
+                    $200
+                  </span>
+                            </h6>
+                        </div>
+                        <div class="new">
+                <span>
+                  New
+                </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box">
+                    <a href="">
+                        <div class="img-box">
+                            <img src="shop-page/images/p2.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h6>
+                                Watch
+                            </h6>
+                            <h6>
+                                Price
+                                <span>
+                    $300
+                  </span>
+                            </h6>
+                        </div>
+                        <div class="new">
+                <span>
+                  New
+                </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box">
+                    <a href="">
+                        <div class="img-box">
+                            <img src="shop-page/images/p3.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h6>
+                                Teddy Bear
+                            </h6>
+                            <h6>
+                                Price
+                                <span>
+                    $110
+                  </span>
+                            </h6>
+                        </div>
+                        <div class="new">
+                <span>
+                  New
+                </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box">
+                    <a href="">
+                        <div class="img-box">
+                            <img src="shop-page/images/p4.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h6>
+                                Flower Bouquet
+                            </h6>
+                            <h6>
+                                Price
+                                <span>
+                    $45
+                  </span>
+                            </h6>
+                        </div>
+                        <div class="new">
+                <span>
+                  New
+                </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box">
+                    <a href="">
+                        <div class="img-box">
+                            <img src="shop-page/images/p5.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h6>
+                                Teddy Bear
+                            </h6>
+                            <h6>
+                                Price
+                                <span>
+                    $95
+                  </span>
+                            </h6>
+                        </div>
+                        <div class="new">
+                <span>
+                  New
+                </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box">
+                    <a href="">
+                        <div class="img-box">
+                            <img src="shop-page/images/p6.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h6>
+                                Flower Bouquet
+                            </h6>
+                            <h6>
+                                Price
+                                <span>
+                    $70
+                  </span>
+                            </h6>
+                        </div>
+                        <div class="new">
+                <span>
+                  New
+                </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box">
+                    <a href="">
+                        <div class="img-box">
+                            <img src="shop-page/images/p7.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h6>
+                                Watch
+                            </h6>
+                            <h6>
+                                Price
+                                <span>
+                    $400
+                  </span>
+                            </h6>
+                        </div>
+                        <div class="new">
+                <span>
+                  New
+                </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="box">
+                    <a href="">
+                        <div class="img-box">
+                            <img src="shop-page/images/p8.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h6>
+                                Ring
+                            </h6>
+                            <h6>
+                                Price
+                                <span>
+                    $450
+                  </span>
+                            </h6>
+                        </div>
+                        <div class="new">
+                <span>
+                  New
+                </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <div class = "dataTables_paginate">
+                    <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+                        <a class="paginate_button previous disabled" aria-controls="dataTable" data-dt-idx="0" tabindex="0" id="dataTable_previous">Previous</a>
+                        <span>
+                      <a class="paginate_button" aria-controls="dataTable" data-dt-idx="1" tabindex="0">1</a>
+                      <a class="paginate_button " aria-controls="dataTable" data-dt-idx="2" tabindex="0">2</a>
+                      <a class="paginate_button " aria-controls="dataTable" data-dt-idx="3" tabindex="0">3</a>
+                      <a class="paginate_button current" aria-controls="dataTable" data-dt-idx="4" tabindex="0">4</a>
+                      <a class="paginate_button " aria-controls="dataTable" data-dt-idx="5" tabindex="0">5</a>
+                      <a class="paginate_button " aria-controls="dataTable" data-dt-idx="6" tabindex="0">6</a>
+                    </span>
+                        <a class="paginate_button next" aria-controls="dataTable" data-dt-idx="7" tabindex="0" id="dataTable_next">Next</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+</section>
+
+<!-- end shop section -->
+
+<!-- info section -->
+
+<section class="info_section  layout_padding2-top">
+    <div class="social_container">
+        <div class="social_box">
+            <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="">
+                <i class="fa fa-youtube" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <div class="info_container ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <h6>
+                        ABOUT US
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="info_form ">
+                        <h5>
+                            Newsletter
+                        </h5>
+                        <form action="#">
+                            <input type="email" placeholder="Enter your email">
+                            <button>
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h6>
+                        NEED HELP
+                    </h6>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <h6>
+                        CONTACT US
+                    </h6>
+                    <div class="info_link-box">
+                        <a href="">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span> Gb road 123 london Uk </span>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span>+01 12345678901</span>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span> demo@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer section -->
+    <footer class=" footer_section">
+        <div class="container">
+            <p>
+                &copy; <span id="displayYear"></span> All Rights Reserved By
+                <a href="https://html.design/">Free Html Templates</a>
+            </p>
+        </div>
+    </footer>
+    <!-- footer section -->
+
+</section>
+
+<!-- end info section -->
+
+
+<script src="shop-page/js/jquery-3.4.1.min.js"></script>
+<script src="shop-page/js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+</script>
+<script src="shop-page/js/custom.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login 07</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="login-page/style.css">
+
+</head>
+<body>
+<section class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                <h2 th:if="${error == true}" class="error">Wrong user or password</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                <div class="wrap d-md-flex">
+                    <div class="text-wrap p-4 p-lg-5 text-center d-flex align-items-center order-md-last">
+                        <div class="text w-100">
+                            <h2>Please login!</h2>
+                            <p>For manage page</p>
+                        </div>
+                    </div>
+                    <div class="login-wrap p-4 p-lg-5">
+                        <div class="d-flex">
+                            <div class="w-100">
+                                <h3 class="mb-4">Sign In</h3>
+                            </div>
+                        </div>
+                        <form th:action="@{/perform_login}" method="POST" class="signin-form">
+                            <div class="form-group mb-3">
+                                <label class="label">Username</label>
+                                <span class="invalid-feedback">username not found</span>
+                                <input type="text"
+                                       name="username"
+                                       th:attr="class=${error == true ?  'form-control is-invalid' : 'form-control' }"
+                                       placeholder="Username"  required>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="label">Password</label>
+                                <input type="password" name="password"
+                                       th:attr="class=${error == true ?  'form-control is-invalid' : 'form-control' }"
+                                       placeholder="Password" required>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control btn btn-primary submit px-3">Sign In</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+
