@@ -40,25 +40,25 @@
                 <ul class="navbar-nav  ">
                     <li class="nav-item">
                         <a class="nav-link" th:href="@{/home}">
-                            Home
+                            TRANG CHỦ
                         </a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" th:href="@{/shop?page=0}">shop <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" th:href="@{/shop?page=0}">CỬA HÀNG <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" th:href="@{/home#customer-review}">
-                            Customer Review
+                            PHẢN HỒI CỦA KHÁCH HÀNG
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" th:href="@{/home#contact}">Contact</a>
+                        <a class="nav-link" th:href="@{/home#contact}">LIÊN HỆ</a>
                     </li>
                 </ul>
                 <div class="user_option">
                     <a th:href="@{/manage?page=0}">
                       <span>
-                          Manage
+                          QUẢN LÝ
                       </span>
                     </a>
                 </div>
@@ -84,7 +84,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">[[${product.name}]]</h5>
-                                    <p class="card-text">[[${product.detail}]]</p>
+                                    <pre class="card-text">[[${product.detail}]]</pre>
                                     <a th:href="@{/shop?page=0}" class="card-link">Quay Lại</a>
                                 </div>
                             </div>
@@ -119,52 +119,42 @@
     <div class="info_container ">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-4">
                     <h6>
-                        ABOUT US
+                        Dành đến các tình yêu ❤️
                     </h6>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
-                    </p>
+                        𝐖𝐡𝐞𝐫𝐞𝐯𝐞𝐫 𝐲𝐨𝐮 𝐠𝐨, 𝐧𝐨 𝐦𝐚𝐭𝐭𝐞𝐫 𝐰𝐡𝐚𝐭 𝐭𝐡𝐞 𝐰𝐞𝐚𝐭𝐡𝐞𝐫,<br>
+                        𝐚𝐥𝐰𝐚𝐲𝐬 𝐛𝐫𝐢𝐧𝐠 𝐲𝐨𝐮𝐫 𝐨𝐰𝐧 𝐬𝐮𝐧𝐬𝐡𝐢𝐧𝐞 ☀️<br>
+                        💖 Tặng Hộp nhung xinh xắn<br>
+                        💖 Chất liệu: Vàng 10k có kiểm định<br>
+                        💖 Sản phẩm có sẵn<br>
+                        💖 Hàng hóa được bảo hành miễn phí<br>
+                        💌 Nhấn vào xem ảnh và inbox cho chúng mình “chân ái” của bạn đi nào!!                    </p>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="info_form ">
-                        <h5>
-                            Newsletter
-                        </h5>
-                        <form action="#">
-                            <input type="email" placeholder="Enter your email">
-                            <button>
-                                Subscribe
-                            </button>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-5">
                     <h6>
-                        NEED HELP
+                        Tư vấn hỗ trợ các tình yêu 💖
                     </h6>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+                        🔻 Bảo hành đánh bóng và làm sáng trọn đời cho tất cả các sản phẩm <br>
+                        🔻 Hỗ trợ đổi sản phẩm trong vòng 7 ngày mà không cần lý do.<br>
                     </p>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <h6>
-                        CONTACT US
+                        Liên hệ với Shop 💖
                     </h6>
                     <div class="info_link-box">
-                        <a href="">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <span> Gb road 123 london Uk </span>
-                        </a>
-                        <a href="">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                            <span>+01 12345678901</span>
-                        </a>
-                        <a href="">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            <span> demo@gmail.com</span>
-                        </a>
+                        <p>
+                            ➡️ Hệ thống cửa hàng: <br>
+                            🏡 79A Đặng Văn Ngữ,HN <br>
+                            🏡 120 Cầu Giấy, HN <br><br>
+                            ➡️ Mua hàng online tại các kênh <br>
+                            📩 Page:“HauiStore PNJ”<br>
+                            📩 Instagram:“hauistorePNJ”<br>
+                            📩 Hotline hỗ trợ: 0246.268.094
+                        </p>
                     </div>
                 </div>
             </div>
@@ -174,8 +164,7 @@
     <footer class=" footer_section">
         <div class="container">
             <p>
-                &copy; <span id="displayYear"></span> All Rights Reserved By
-                <a href="https://html.design/">Free Html Templates</a>
+                &copy; <span id="displayYear"></span> All Rights Reserved By Group 15
             </p>
         </div>
     </footer>
