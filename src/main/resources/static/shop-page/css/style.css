@@ -32,6 +32,15 @@ body {
   padding-bottom: 90px;
 }
 
+.fontvidu{
+  font-family: Pacifico;
+  font-size: 58px;
+
+}
+.txt1{
+  font-family: Agbalumo;
+  font-size: 20px;
+}
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,9 +51,11 @@ body {
           flex-direction: column;
 }
 
-.heading_container h2 {
-  text-transform: uppercase;
-  font-weight: bold;
+.heading_container p {
+  font-family: Sansita Swashed;
+  font-size:60px;
+  /*text-transform: uppercase;*/
+  color: #2072a6;
 }
 
 .heading_container h2 span {
@@ -65,6 +76,11 @@ body {
 
 .hero_area.sub_pages {
   height: auto;
+}
+
+.Giamgia{
+  font-family: "Times New Roman";
+  color: cadetblue;
 }
 
 a,
@@ -200,9 +216,10 @@ a:focus {
 
 /*end header section*/
 .slider_section .slider_container {
-  color: #fefefe;
-  background-color: #000000;
-  background-color: #f89cab;
+  color: white;
+  background-color: black;
+  /*background-color: #f89cab;*/
+  background-size: 80%;
   padding: 25px;
   border-radius: 0 0 15px 15px;
 }
@@ -230,6 +247,8 @@ a:focus {
 .slider_section .detail-box {
   padding-left: 45px;
   margin: 45px 0;
+  /*width: 100px;*/
+  /*height: 100px;*/
 }
 
 .slider_section .detail-box h1 {
@@ -485,7 +504,7 @@ a:focus {
 }
 
 .gift_section .box {
-  background-color: #6929a5;
+  background-color: #f3ece2;
   border-radius: 15px;
   color: #ffffff;
 }
@@ -530,17 +549,17 @@ a:focus {
 .gift_section .detail-box .btn-box .btn1 {
   display: inline-block;
   padding: 10px 0;
-  background-color: #ffffff;
-  color: #000000;
-  border: 1px solid #ffffff;
-  border-radius: 0;
+  background-color: #9242dd;
+  color: white;
+  border: 1px solid #9242dd;
+  border-radius: 5px;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
 .gift_section .detail-box .btn-box .btn1:hover {
   background-color: transparent;
-  color: #ffffff;
+  color: #9242dd;
 }
 
 .gift_section .detail-box .btn-box .btn2 {
@@ -549,7 +568,7 @@ a:focus {
   background-color: #9242dd;
   color: #ffffff;
   border: 1px solid #9242dd;
-  border-radius: 0;
+  border-radius: 5px;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
