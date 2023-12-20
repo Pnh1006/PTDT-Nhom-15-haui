@@ -1,0 +1,222 @@
+create database haui_stores;
+use haui_stores
+INSERT INTO products(id,image, list_price,name, sale_price,detail) VALUES
+ (1,'bracelet1.jpg',500000,'Vòng tay bạc BR01',300000,
+'Bộ sưu tập: Bracelet
+Phân loại: Vòng tay
+Mã sản phẩm: BR01
+Kim loại: Bạc
+Màu sắc: Bạch kim
+Size: Freesize'),
+ (3,'bracelet2.jpg',1000000,'Vòng tay bạc BR02',800000,
+'Bộ sưu tập: Bracelet
+Phân loại: Vòng tay
+Mã sản phẩm: BR02
+Kim loại: Bạc
+Màu sắc: Bạch kim
+Size: Freesize'),
+ (4,'bracelet3.jpg',700000,'Vòng tay bạc BR03',450000,
+'Bộ sưu tập: Bracelet
+Phân loại: Vòng tay
+Mã sản phẩm: BR03
+Kim loại: Bạc
+Màu sắc: Bạch kim
+Size: Freesize'),
+ (5,'bracelet4.jpg',300000,'Vòng tay bạc BR04',150000,
+'Bộ sưu tập: Bracelet
+Phân loại: Vòng tay
+Mã sản phẩm: BR04
+Kim loại: Bạc
+Màu sắc: Bạch kim
+Size: Freesize'),
+ (6,'bracelet5.jpg',800000,'Vòng tay bạc BR05',600000,
+'Bộ sưu tập: Bracelet
+Phân loại: Vòng tay
+Mã sản phẩm: BR05
+Kim loại: Bạc
+Màu sắc: Bạch kim
+Size: Freesize'),
+ (7,'brooch1.jpg',300000,'Cài áo bạc B01',200000,
+'Bộ sưu tập: Brooch
+Phân loại: Cài áo
+Mã sản phẩm: B01
+Kim loại: Bạc
+Màu sắc: Bạch kim
+Size: Freesize'),
+ (8,'brooch2.jpg',250000,'Cài áo bạc B02',100000,
+'Bộ sưu tập: Brooch
+Phân loại: Cài áo
+Mã sản phẩm: B02
+Kim loại: Bạc
+Màu sắc: Bạch kim
+Size: Freesize'),
+ (9,'brooch3.jpg',100000,'Cài áo bạc B03',70000,
+'Bộ sưu tập: Brooch
+Phân loại: Cài áo
+Mã sản phẩm: B03
+Kim loại: Bạc
+Màu sắc: Bạch kim
+Size: Freesize'),
+ (10,'brooch4.jpg',500000,'Cài áo bạc B04',400000,
+'Bộ sưu tập: Brooch
+Phân loại: Cài áo
+Mã sản phẩm: B04
+Kim loại: Bạc
+Màu sắc: Bạch kim
+Size: Freesize'),
+ (11,'crown1.jpg',7000000,'Vương miện bạc CR01',4500000,
+'Bộ sưu tập: Crown
+Phân loại: Vương miện
+Mã sản phẩm:  CR01
+Kim loại: Bạc
+Màu sắc: Bạch kim
+Size: Freesize'),
+ (12,'earrings1.jpg',600000,'Hoa tai bạc EA01',400000,
+'Bộ sưu tập: Earrings
+Phân loại: Hoa tai
+Mã sản phẩm:  EA01
+Kim loại: Bạc
+Màu sắc: Bạc
+Size: Freesize'),
+ (13,'earrings2.jpg',800000,'Hoa tai bạc EA02',550000,
+'Bộ sưu tập: Earrings
+Phân loại: Hoa tai
+Mã sản phẩm:  EA02
+Kim loại: Bạc
+Màu sắc: Bạc
+Size: Freesize'),
+ (14,'earrings3.jpg',1000000,'Hoa tai bạc EA03',800000,
+'Bộ sưu tập: Earrings
+Phân loại: Hoa tai
+Mã sản phẩm:  EA03
+Kim loại: Bạc
+Màu sắc: Bạc
+Size: Freesize'),
+ (15,'earrings4.jpg',500000,'Hoa tai bạc EA04',300000,
+'Bộ sưu tập: Earrings
+Phân loại: Hoa tai
+Mã sản phẩm:  EA04
+Kim loại: Bạc
+Màu sắc: Bạc
+Size: Freesize'),
+ (16,'earrings5.jpg',600000,'Hoa tai bạc EA05',550000,
+'Bộ sưu tập: Earrings
+Phân loại: Hoa tai
+Mã sản phẩm:  EA05
+Kim loại: Bạc
+Màu sắc: Bạc
+Size: Freesize'),
+ (17,'earrings6.jpg',700000,'Hoa tai bạc EA06',450000,
+'Bộ sưu tập: Earrings
+Phân loại: Hoa tai
+Mã sản phẩm:  EA06
+Kim loại: Bạc
+Màu sắc: Bạc
+Size: Freesize'),
+ (18,'earrings7.jpg',300000,'Hoa tai bạc EA07',200000,
+'Bộ sưu tập: Earrings
+Phân loại: Hoa tai
+Mã sản phẩm:  EA07
+Kim loại: Bạc
+Màu sắc: Bạc
+Size: Freesize'),
+ (19,'headband1.jpg',600000,'Cài đầu bạc HB01',500000,
+'Bộ sưu tập: HeadBand
+Phân loại: Cài đầu
+Mã sản phẩm:  HB01
+Kim loại: Bạc
+Màu sắc: Bạc
+Size: Freesize'),
+ (20,'headband2.jpg',700000,'Cài đầu bạc HB02',550000,
+'Bộ sưu tập: HeadBand
+Phân loại: Cài đầu
+Mã sản phẩm:  HB02
+Kim loại: Bạc
+Màu sắc: Bạc
+Size: Freesize'),
+ (21,'headband3.jpg',200000,'Cài đầu bạc HB03',100000,
+'Bộ sưu tập: HeadBand
+Phân loại: Cài đầu
+Mã sản phẩm:  HB03
+Kim loại: Bạc
+Màu sắc: Bạc
+Size: Freesize'),
+ (22,'headband4.jpg',100000,'Cài đầu bạc HB04',60000,
+'Bộ sưu tập: HeadBand
+Phân loại: Cài đầu
+Mã sản phẩm:  HB04
+Kim loại: Bạc
+Màu sắc: Bạc
+Size: Freesize'),
+ (23,'necklace1.jpg',500000,'Vòng cổ bạc NL01',400000,
+'Bộ sưu tập: Necklace
+Phân loại: Vòng cổ
+Mã sản phẩm:  NL01
+Kim loại: Bạc,
+Màu sắc: Bạc
+Size: Freesize'),
+ (24,'necklace2.jpg',300000,'Vòng cổ bạc NL02',200000,
+'Bộ sưu tập: Necklace
+Phân loại: Vòng cổ
+Mã sản phẩm:  NL02
+Kim loại: Bạc,
+Màu sắc: Bạc
+Size: Freesize'),
+ (25,'necklace3.jpg',500000,'Vòng cổ bạc NL03',450000,
+'Bộ sưu tập: Necklace
+Phân loại: Vòng cổ
+Mã sản phẩm:  NL03
+Kim loại: Bạc,
+Màu sắc: Bạc
+Size: Freesize'),
+ (26,'necklace4.jpg',700000,'Vòng cổ bạc NL04',500000,
+'Bộ sưu tập: Necklace
+Phân loại: Vòng cổ
+Mã sản phẩm:  NL04
+Kim loại: Bạc,
+Màu sắc: Bạc
+Size: Freesize'),
+ (27,'ring1.jpg',150000,'Nhẫn bạc R01',100000,
+'Bộ sưu tập: Ring
+Phân loại: Nhẫn
+Mã sản phẩm:  R01
+Kim loại: Bạc,
+Màu sắc: Bạc
+Size: One size 1.6'),
+ (28,'ring2.jpg',1500000,'Nhẫn bạc R02',1250000,
+'Bộ sưu tập: Ring
+Phân loại: Nhẫn
+Mã sản phẩm:  R02
+Kim loại: Bạc,
+Màu sắc: Bạc
+Size: One size 1.6'),
+ (29,'ring3.jpg',2000000,'Nhẫn bạc R03',1500000,
+'Bộ sưu tập: Ring
+Phân loại: Nhẫn
+Mã sản phẩm:  R03
+Kim loại: Bạc,
+Màu sắc: Bạc
+Size: One size 1.6'),
+ (30,'ring4.jpg',10000000,'Nhẫn bạc R04',8000000,
+'Bộ sưu tập: Ring
+Phân loại: Nhẫn
+Mã sản phẩm:  R04
+Kim loại: Bạc,
+Màu sắc: Bạc
+Size: One size 1.6'),
+ (31,'ring5.jpg',4000000,'Nhẫn bạc R05',1500000,
+'Bộ sưu tập: Ring
+Phân loại: Nhẫn
+Mã sản phẩm:  R05
+Kim loại: Bạc,
+Màu sắc: Bạc
+Size: One size 1.6'),
+ (32,'ring6.jpg',1000000,'Nhẫn bạc R06',800000,
+'Bộ sưu tập: Ring
+Phân loại: Nhẫn
+Mã sản phẩm:  R06
+Kim loại: Bạc,
+Màu sắc: Bạc
+Size: One size 1.6');
+ 
+SELECT * FROM haui_stores.products;
